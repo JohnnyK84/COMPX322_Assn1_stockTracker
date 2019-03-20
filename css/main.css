@@ -1,0 +1,55 @@
+body {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+table {
+    margin-top: 1.5em;
+    margin: auto;
+    text-align: center;
+    border-collapse: collapse;
+    border-bottom: 1px solid black;
+}
+
+#stockTable {
+    width: 60%;
+}
+
+#stockDataTable {    
+    width: 80%;
+}
+
+#displayStocks {
+    margin-bottom: 300px;
+}
+
+th,td   {
+    border-top: 1px solid black;    
+    padding: 0.5em;
+}
+
+#selectStock {
+    text-align: left;
+}
+
+button,.button {
+    width: 150px;
+    height: 30px;
+
+    display: block; 
+    margin: auto;  
+    border-radius: 3px;
+    margin-top: 1.5em;
+    background-color: lightgreen;
+}
+
+#deleteStockButton {
+    width: 120px;
+    margin-top: 0;
+    margin-right: 5%;
+    background-color: rgb(244, 66, 66);
+}
+
+div {
+    margin-top: 1.5em;
+}
