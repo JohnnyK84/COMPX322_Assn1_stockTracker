@@ -12,9 +12,10 @@
     else {
         echo "<table id=stockDataTable>";
             
-            echo "<tr><th>Company Name:</th><th>Current Price</th><th>Recent Change</th>
+        echo "<h1>Performance of selected stock</h1>";
+            echo "<tr id=tableHead ><th>Company Name:</th><th>Current Price</th><th>Recent Change</th>
                 <th>Annual Trend</th><th>Recent Change Direction</th></tr>";
-            echo "<tr><td>".$row['companyname']."</td><td>".$row['currentprice']."</td><td>"
+            echo "<tr id=stockData ><td>".$row['companyname']."</td><td>".$row['currentprice']."</td><td>"
                 .$row['recentchange']."</td><td>".$row['annualtrend']."</td><td>"
                 .$row['recentchangedirection']."</td></tr>";
 

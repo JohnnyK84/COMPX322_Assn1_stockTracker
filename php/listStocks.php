@@ -6,7 +6,7 @@
     echo "<table id=stockDataTable>";
             
     echo "<h2>Select all stocks you would like to add</h2>";
-            echo "<tr><th>Company Name:</th><th>Current Price</th><th>Recent Change</th>
+            echo "<tr><th>Select Stock</th><th>Company Name:</th><th>Current Price</th><th>Recent Change</th>
                 <th>Annual Trend</th><th>Recent Change Direction</th></tr>";
             
             while ($row = $result->fetch()) {
@@ -16,5 +16,5 @@
                 
             }
         echo "</table>";
-        echo "<button onclick=javascript:selectStocks()>Add Stocks</button>"      
+        echo "<button id=addStockButton onclick=javascript:selectStocks()>Add Stocks</button>"      
 ?>

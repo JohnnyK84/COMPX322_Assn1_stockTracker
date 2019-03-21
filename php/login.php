@@ -13,10 +13,9 @@
         $row = $result->fetch();
 
         if ($row == null) {
-            echo "<br> wrong Login username or password, please try again";
+            echo false;
         }else{
-            echo " <br> Login was succesful, hello " . $username ;
-            $_SESSION["username"] = $username;     
+            echo true;    
         }
 
     }catch(PDOException $e){

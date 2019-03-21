@@ -9,13 +9,13 @@
         echo "<h2>Your current Stocks:</h2>";
         echo "<h3>Click on a stock to see recent performance of that stock</h3>";
         echo "<table id=stockTable>";
-        echo "<tr><th>Stock ID</th><th>Company Name</th><th></th></tr>";
+        echo "<tr id=tableHead ><th>Stock ID</th><th>Company Name</th><th></th></tr>";
         
             while($row = $result->fetch()) {                                            
                 $stockId = $row['stockid'];
 
                 //onclick function to show additional company info, attaches to each row of table and takes in stockid
-                echo "<tr onclick='javascript:stockInfo(".$stockId.")'>";    
+                echo "<tr id=stockRow onclick='javascript:stockInfo(".$stockId.")'>";    
                 
                 //query uses stockid to bring in company name from stocks table 
                 $query2 = "SELECT companyname FROM stocks WHERE id = $stockId";
@@ -37,7 +37,7 @@
             
             echo "</table>";
             
-        echo "<button type=button onclick=javascript:listStocks()>Add More Stocks</button>";
+        echo "<button id=addStockButton type=button onclick=javascript:listStocks()>Add More Stocks</button>";
 
     }catch(PDOException $e){
         echo "Error Something Went Wrong: " . $e->getMessage();

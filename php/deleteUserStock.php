@@ -3,7 +3,7 @@
     $stockId = $_POST['stockId'];
     $username = $_POST['username'];
 
-    $query = "DELETE FROM userstocks WHERE username ='$username' and stockid =$stockId";
+    $query = "DELETE FROM UserStocks WHERE username ='$username' and stockid =$stockId";
     
     if ($conn->query($query) == TRUE) {
         echo "Record deleted successfully";

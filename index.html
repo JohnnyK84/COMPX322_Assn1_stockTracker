@@ -1,34 +1,42 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="UTF-8">
-	<title>Your Stock Tracker</title>
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Your Stock Tracker</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+  </head>
 
-<body>
+  <body>
+    <div class="wrapper">
+      <h1>Welcome to Stock Tracker!</h1>
+      <hr />
+      <div id="login">
+        <form name="login" action="javascript:login()" method="POST">
+          <br />
+          <input
+            type="text"
+            id="usernameField"
+            name="username"
+            placeholder="Username"
+            value=""
+          /><br /><br />
+          <input
+            type="password"
+            id="passwordField"
+            name="password"
+            placeholder="Password"
+            value=""
+          />
+          <input class="button" type="submit" value="Login" /><br /><br />
+        </form>
+      </div>
 
-<h1>Welcome to Stock Tracker!</h1>
+      <p id="login_text"></p>
 
-<div id="login">
-	<form name="login" action="javascript:login()" method="POST">
-		<br>
-		<input type="text"  id="usernameField" name="username" placeholder="Username" value=""><br><br>				
-		<input type="password"  id="passwordField" name="password" placeholder="Password" value="">
-		<input class="button" type="submit" value="Login"><br><br>		
-	</form>
-</div>
+      <div id="displayStockData"></div>
 
-<p id="login_text"></p>
-
-<div id="displayStockData"></div>
-
-<div id="displayStocks"></div>
-
-<script src="javascript/scripts.js"></script>
-
-</body>
-
+      <div id="displayStocks"></div>
+    </div>
+    <script src="javascript/scripts.js"></script>
+  </body>
 </html>
-
-
